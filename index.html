@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>From Char Code</title>
+        <style>
+            p{
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <!--NEXT LINE CAN BE DELETED-->
+        <script type="module">import Buttons from "../buttons.js"; Buttons(document.body)</script>
+<!--
+        <p id="p1">
+            You can do multiple at a time.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam ornare wisi 1984 eu metus. In convallis. Nulla non arcu lacinia neque faucibus fringilla. Praesent dapibus. Donec iaculis gravida nulla. Aenean 1 vel massa quis mauris vehicula lacinia. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 303 consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Nullam sit amet magna in magna gravida vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nullam feugiat, turpis 88 at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.
+
+Fusce aliquam vestibulum ipsum. Maecenas aliquet accumsan leo. Mauris tincidunt sem sed arcu. Quisque porta. Mauris metus. Mauris dictum facilisis augue. Proin mattis lacinia justo. Maecenas aliquet accumsan leo. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Praesent dapibus. Nam sed tellus id magna elementum tincidunt. Nunc dapibus tortor vel mi dapibus sollicitudin. Aenean fermentum risus id tortor. Cras elementum.
+
+Praesent vitae arcu tempor neque lacinia pretium. Donec vitae arcu. Curabitur bibendum justo non orci. Nullam eget nisl. Nulla 1234567890 pulvinar eleifend sem. Donec iaculis gravida nulla. Praesent vitae arcu tempor neque lacinia pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer imperdiet lectus quis justo. In enim a arcu imperdiet malesuada. Pellentesque pretium lectus id turpis. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Nam quis nulla. Pellentesque pretium lectus id turpis. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Integer in sapien. Maecenas sollicitudin. Suspendisse sagittis ultrices augue.
+
+Nulla non lectus sed nisl molestie malesuada. Phasellus et lorem id felis nonummy placerat. Donec vitae arcu. Nullam rhoncus aliquam metus. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? In dapibus augue non sapien. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Nullam faucibus mi quis velit. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus.
+
+Nullam sit amet magna in magna gravida vehicula. Suspendisse sagittis ultrices augue. Etiam neque. Maecenas libero. Integer in sapien. Etiam quis quam. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Integer lacinia. Fusce aliquam vestibulum ipsum. Quisque tincidunt scelerisque libero. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci.
+        </p>
+        <p id="p2">Or one after another.</p>
+        <br>
+        <p id="p3">You can hide cursor after writing.</p>
+        <p id="p4">Or let it visible.</p>
+        
+        <script type="module">
+            import { FromCharCode, Cursor } from "./main.js";
+
+            let p1 = new FromCharCode(document.getElementById("p1"), 1, 50);
+            let p2 = new FromCharCode(document.getElementById("p2"), 1);
+            let p3 = new Cursor(document.getElementById("p3"), 100, true);
+            let p4 = new Cursor(document.getElementById("p4"), 300, false);
+        </script>-->
+
+        <!--DEMO-->
+        <p id="demo">Or hide the cursor at the end</p>
+        <br><br><br><br>
+        <button id="demo_button"></button>
+        <script type="module">
+            import { FromCharCode, Cursor } from "./main.js";
+            
+            document.getElementById("demo_button").onclick = function(){
+                //let demo = new FromCharCode(document.getElementById("demo"), 8);
+                let demo = new Cursor(document.getElementById("demo"), 300, true);
+            }
+        </script>
+    </body>
+</html>
