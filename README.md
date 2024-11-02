@@ -6,7 +6,7 @@ text will still be available as it will never be replaced with
 whitespaces.
 
 # How To Use
-## embeding (installation)
+## Embeding to .HTML
 1. Import `main.js` as module to your HTML
    `import { FromCharCode, Cursor } from "./main.js";`
 2. Create new instance object
@@ -19,6 +19,12 @@ character is found
      - `element` - HTML node with string inside innerHTML
      - `interval` - time to reveal next character in _ms_
      - `disappear` - false = | after "writting" string keeps blinking; true = | disappears
+    ```javascript
+   import { FromCharCode, Cursor } from "./main.js";
+
+   FromCharCode(element, interval, multInterval)
+    Cursor(element, interval, disappear)
+    ```
 
 
 ## Usage
