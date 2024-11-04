@@ -31,19 +31,19 @@ character is found
 
 `let demo = new FromCharCode(document.getElementById("demo"), 300, 1);`
 
-![](sources/Change_multiple_characters_at_once.mov)
+![](sources/Change_multiple_characters_at_once.gif)
 ## 
 
 `let demo = new FromCharCode(document.getElementById("demo"), 8);`
 
-![](sources/Change_characters_one_after_another.mov)
+![](sources/Change_characters_one_after_another.gif)
 ## 
 
 `let demo = new Cursor(document.getElementById("demo"), 150, false);`
 
-![](sources/Reveal_with_cursor.mov)
+![](sources/Reveal_with_cursor.gif)
 ## 
 
 `let demo = new Cursor(document.getElementById("demo"), 300, true);`
 
-![](sources/Or_hide_the_cursor_at_the_end.mov)
+![](sources/Or_hide_the_cursor_at_the_end.gif)
