@@ -6,6 +6,15 @@ text will still be available as it will never be replaced with
 whitespaces.
 
 # How To Use
+
+## Tip
+Best to use with monospace font
+```css
+#demo{
+   font-family: monospace;
+}
+```
+
 ## Embeding to .HTML
 1. Import `main.js` as module to your HTML
    `import { FromCharCode, Cursor } from "./main.js";`
